@@ -20,8 +20,8 @@ This project is a Selenium-based web testing framework written in Java. It uses 
 ### Installation
 1. **Clone the repository**:
    ```bash
-   git clone github.com/wisnuwm/ALTA-Selenium.git
-   cd ALTA-Selenium
+   git clone https://github.com/RKCollaborative/RkProjectOne.git
+   cd RkProjectOne
 2. **Open the project in IntelliJ IDEA**:
 Open IntelliJ IDEA.
 Select File > Open and navigate to the ALTA-Selenium directory.
