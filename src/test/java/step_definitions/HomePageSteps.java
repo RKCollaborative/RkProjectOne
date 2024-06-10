@@ -13,8 +13,9 @@ public class HomePageSteps {
 
 
     @Given("User already on Heroku App Home Page")
-    public void userAlreadyOnHerokuAppHomePage(){
+    public void userAlreadyOnHerokuAppHomePage() throws InterruptedException {
         homePage.verifyHomeTitleIsDisplayed();
+        Thread.sleep(1000);
     }
 
 }
