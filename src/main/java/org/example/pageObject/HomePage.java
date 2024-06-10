@@ -16,8 +16,15 @@ public class HomePage {
     @FindBy(xpath = "//h1[@class='heading']")
     private WebElement homePageTitle;
 
+    @FindBy(xpath = "//li//a[@href='/upload']")
+    private WebElement fileUploadOptionBtn;
+
     public boolean verifyHomeTitleIsDisplayed(){
         return homePageTitle.isDisplayed();
+    }
+
+    public void clickFileUploadOptionBtn(){
+        fileUploadOptionBtn.click();
     }
 
 }
