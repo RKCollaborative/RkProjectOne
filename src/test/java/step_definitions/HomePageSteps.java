@@ -4,19 +4,18 @@ import hooks.Hooks;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.example.pageObject.HomePage;
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
 public class HomePageSteps {
 
     private final WebDriver driver = Hooks.driver;
-
     HomePage homePage = new HomePage(driver);
 
 
     @Given("User already on Heroku App Home Page")
-    public void userAlreadyOnHerokuAppHomePage() throws InterruptedException {
-        homePage.verifyHomeTitleIsDisplayed();
-        Thread.sleep(1000);
+    public void userAlreadyOnHerokuAppHomePage(){
+        Assert.assertTrue(homePage.verifyHomeTitleIsDisplayed());
     }
 
     @Then("User click file upload option")
