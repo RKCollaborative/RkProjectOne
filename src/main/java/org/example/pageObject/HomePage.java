@@ -23,6 +23,9 @@ public class HomePage {
     @FindBy(xpath = "//li//a[@href='/upload']")
     private WebElement fileUploadOptionBtn;
 
+    @FindBy(xpath = "//a[@href='/checkboxes']")
+    private WebElement checkboxOptionBtn;
+
     public boolean verifyHomeTitleIsDisplayed(){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.visibilityOf(homePageTitle));
@@ -31,6 +34,10 @@ public class HomePage {
 
     public void clickFileUploadOptionBtn(){
         fileUploadOptionBtn.click();
+    }
+
+    public void clickCheckboxOptionBtn(){
+        checkboxOptionBtn.click();
     }
 
 }
