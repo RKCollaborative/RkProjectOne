@@ -24,7 +24,7 @@ This project is a Selenium-based web testing framework written in Java. It uses 
    cd RkProjectOne
 2. **Open the project in IntelliJ IDEA**:
 Open IntelliJ IDEA.
-Select File > Open and navigate to the ALTA-Selenium directory.
+Select File > Open and navigate to the RkProjectOne directory.
 IntelliJ IDEA will automatically detect the Maven project and import dependencies.
 3. **Install dependencies**:
 Maven will automatically download and install the necessary dependencies specified in the pom.xml file.
