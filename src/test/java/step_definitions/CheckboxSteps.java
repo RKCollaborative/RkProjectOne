@@ -17,8 +17,7 @@ public class CheckboxSteps {
     }
 
     @And("User click checkbox 2 if checkbox 2 is checked")
-    public void userClickCheckboxIfCheckboxIsChecked() throws InterruptedException {
+    public void userClickCheckboxIfCheckboxIsChecked() {
         checkboxPage.verifyCheckbox2IsChecked();
-        Thread.sleep(1500);
     }
 }
