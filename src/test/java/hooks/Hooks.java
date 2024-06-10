@@ -13,7 +13,7 @@ public class Hooks {
     public static ChromeOptions GenerateDriverChrome() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--no-sandbox",
-               "--single-process",
+//               "--single-process",
                 "--ignore-ssl-errors=yes",
                 "--ignore-certificate-errors",
                 "--window-size=1280,800",
@@ -28,7 +28,7 @@ public class Hooks {
         //inisiasi library selenium
         driver = new ChromeDriver(GenerateDriverChrome());
 
-        String appUrl = "https://www.saucedemo.com/";
+        String appUrl = "https://the-internet.herokuapp.com/";
         driver.get(appUrl);//fungsi untuk ngebuka link html
         driver.manage().window().maximize();//fungsi untuk maximize browser
     }
