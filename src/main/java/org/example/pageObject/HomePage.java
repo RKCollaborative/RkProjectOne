@@ -23,6 +23,9 @@ public class HomePage {
     @FindBy(xpath = "//li//a[@href='/upload']")
     private WebElement fileUploadOptionBtn;
 
+    @FindBy(xpath ="//a[.='Drag and Drop']")
+    private WebElement btnDragAndDrop;
+
     public boolean verifyHomeTitleIsDisplayed(){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.visibilityOf(homePageTitle));
@@ -32,5 +35,12 @@ public class HomePage {
     public void clickFileUploadOptionBtn(){
         fileUploadOptionBtn.click();
     }
+    public void clickBtnDragAndDrop(){
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.visibilityOf(btnDragAndDrop));
+        wait.until(ExpectedConditions.elementToBeClickable(btnDragAndDrop));
+        btnDragAndDrop.click();
 
+
+    }
 }

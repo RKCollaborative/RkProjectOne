@@ -15,6 +15,7 @@ public class HomePageSteps {
 
     @Given("User already on Heroku App Home Page")
     public void userAlreadyOnHerokuAppHomePage(){
+
         Assert.assertTrue(homePage.verifyHomeTitleIsDisplayed());
     }
 
